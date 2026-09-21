@@ -1,0 +1,7 @@
+.manager {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-3);
+  width: fit-content;
+  height: 100%;
+}
