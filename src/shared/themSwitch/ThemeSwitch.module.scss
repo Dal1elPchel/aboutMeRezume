@@ -1,0 +1,33 @@
+.switchBtn {
+  width: var(--space-16);
+  height: var(--space-8);
+  border-radius: var(--radius-xl);
+  background-color: var(--color-control);
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  .switchBtnInner {
+    position: absolute;
+    right: var(--space-1);
+    border-radius: var(--radius-xl);
+    height: var(--space-6);
+    width: var(--space-6);
+    background-color: var(--color-bg-secondary);
+    transition: var(--transition-normal);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      width: var(--space-4);
+      height: var(--space-4);
+      fill: var(--color-text);
+    }
+  }
+
+  &[aria-checked='true'] .switchBtnInner {
+    transform: translateX(-32px);
+  }
+}

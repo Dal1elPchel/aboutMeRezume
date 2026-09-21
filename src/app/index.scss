@@ -1,4 +1,5 @@
-:root {
+:root,
+[data-theme='dark'] {
   --color-bg: #0f1117;
   --color-bg-secondary: #141720;
 
@@ -23,7 +24,46 @@
   --color-warning: #f59e0b;
   --color-error: #ef4444;
   --color-info: #3b82f6;
+}
 
+[data-theme='light'] {
+  /* Background: светлый, нейтральный, не жёлтый */
+  --color-bg: #f3f2ef;
+  --color-bg-secondary: #e7e5e0;
+
+  /* Cards / surfaces: явно темнее фона */
+  --color-surface: #c3cddd;
+  --color-surface-hover: #aab7cc;
+
+  /* Navigation / controls: самые тёмные, с белым текстом */
+  --color-control: #465c85;
+  --color-control-hover: #34476a;
+
+  /* Text */
+
+  --color-text: #111318;
+  --color-text-secondary: #4b5059;
+  --color-text-muted: #737983;
+
+  /* Accent */
+
+  --color-primary: #465c85;
+  --color-primary-hover: #465c85;
+  --color-primary-light: #465c85;
+
+  /* Borders */
+
+  --border-color: #cfd4db;
+  --border-color-hover: #b8bec7;
+
+  /* Shadows */
+
+  --shadow-sm: 0 1px 3px rgb(15 23 42 / 10%);
+  --shadow-md: 0 6px 16px rgb(15 23 42 / 12%);
+  --shadow-lg: 0 16px 40px rgb(15 23 42 / 15%);
+}
+
+:root {
   --font-main: 'Inter', sans-serif;
   --font-heading: 'Manrope', sans-serif;
 
@@ -71,40 +111,12 @@
   --shadow-md: 0 8px 24px rgb(0 0 0 / 25%);
   --shadow-lg: 0 16px 48px rgb(0 0 0 / 30%);
 
-
   --transition-fast: 0.15s ease;
   --transition-normal: 0.25s ease;
   --transition-slow: 0.4s ease;
 
-
   --container-width: 1200px;
   --container-padding: 24px;
-}
-
-html[data-set='lightTheme'] {
-  --color-bg: #f5f7fa;
-  --color-bg-secondary: #ffffff;
-
-  --color-surface: #ffffff;
-  --color-surface-hover: #f0f2f5;
-
-  --color-control: #e9edf2;
-  --color-control-hover: #dfe4ea;
-
-  --color-text: #111827;
-  --color-text-secondary: #4b5563;
-  --color-text-muted: #6b7280;
-
-  --color-primary: #16a34a;
-  --color-primary-hover: #15803d;
-  --color-primary-light: #22c55e;
-
-  --border-color: #e1e5eb;
-  --border-color-hover: #cbd1d9;
-
-  --shadow-sm: 0 2px 8px rgb(0 0 0 / 8%);
-  --shadow-md: 0 8px 24px rgb(0 0 0 / 10%);
-  --shadow-lg: 0 16px 48px rgb(0 0 0 / 14%);
 }
 
 *,
@@ -133,8 +145,14 @@ body {
   line-height: var(--line-md);
 
   transition:
-          background-color var(--transition-normal),
-          color var(--transition-normal);
+    background-color var(--transition-normal),
+    color var(--transition-normal);
+}
+
+.container {
+  max-width: var(--container-width);
+  padding: var(--container-padding);
+  margin: 0 auto;
 }
 
 h1,
@@ -257,7 +275,6 @@ textarea {
 
 @media (max-width: 767px) {
   :root {
-
     --text-xs: 11px;
     --text-sm: 13px;
     --text-md: 14px;
