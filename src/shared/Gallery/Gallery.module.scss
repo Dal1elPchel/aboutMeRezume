@@ -1,0 +1,36 @@
+.gallery {
+  display: flex;
+  align-items: flex-end;
+  gap: var(--space-20);
+}
+
+.introWrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.label {
+  position: absolute;
+  top: 6%;
+  right: -190px;
+  font-family: 'Caveat', cursive;
+  font-size: 2rem;
+  font-weight: lighter;
+  line-height: 1.15;
+  color: var(--color-text);
+  white-space: nowrap;
+  transform: rotate(-8deg);
+}
+
+.arrow {
+  position: absolute;
+  top: 16%;
+  right: -95px;
+  width: 130px;
+  height: 220px;
+  overflow: visible;
+
+  path {
+    stroke: var(--color-text);
+  }
+}

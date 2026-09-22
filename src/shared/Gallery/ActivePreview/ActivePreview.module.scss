@@ -1,0 +1,9 @@
+.preview {
+  width: calc(var(--space-24)*5);
+  height: calc(var(--space-24)*5);
+  object-fit: cover;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35),
+  0 0 100px color-mix(in srgb, var(--color-primary) 20%, transparent);
+  transform: rotate(-3deg);
+  border-radius: var(--radius-lg);
+}
