@@ -1,0 +1,44 @@
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.intro {
+  padding-bottom: var(--space-10);
+  border-bottom: 2px solid var(--border-color);
+}
+
+.mainInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  h5 {
+    font-size: var(--text-xl);
+    font-weight: normal;
+    color: var(--color-text-secondary);
+    font-family: var(--font-heading);
+  }
+
+  h2 {
+    font-size: var(--text-4xl);
+    padding-bottom: var(--space-4);
+    span {
+      color: var(--color-primary);
+    }
+  }
+
+  .subtitle {
+    padding-bottom: var(--space-24);
+  }
+}
+
+.btnManager {
+  padding-top: var(--space-24);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-5);
+}
