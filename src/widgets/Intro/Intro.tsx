@@ -10,7 +10,7 @@ import { Mail, DownloadIcon } from 'lucide-react';
 const Intro = () => {
   return (
     <div className={styles.intro}>
-      <div className={`container ${styles.inner}`}>
+      <div id="about" className={`container ${styles.inner}`}>
         <div className={styles.mainInfo}>
           <h5>Frontend Developer</h5>
           <h2>

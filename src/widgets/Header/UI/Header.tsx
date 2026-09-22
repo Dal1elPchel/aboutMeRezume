@@ -5,7 +5,8 @@ import ThemeSwitch from '@/shared/themSwitch/ThemeSwitch.tsx';
 import { useTheme } from '@/shared/library/theme/useTheme.ts';
 
 const Header = () => {
-  const items = ['Обо мне', 'Проекты', 'Навыки', 'Контакты'];
+  const items = ['Обо мне', 'Навыки', 'Проекты', 'Контакты'];
+  const hrefs = ['about', 'skills', 'projects', 'contacts'];
   const { theme, toggleTheme } = useTheme();
   return (
     <header className={styles.header}>
@@ -15,7 +16,7 @@ const Header = () => {
           <h4>Даниил Пчелинцев</h4>
         </div>
 
-        <NavManager items={items} />
+        <NavManager items={items} hrefs={hrefs} />
 
         <div className={styles.btnManager}>
           <ThemeSwitch checked={theme !== 'dark'} onChange={toggleTheme} />
