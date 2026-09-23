@@ -21,7 +21,12 @@ const Intro = () => {
           </p>
           <Line />
           <div className={styles.btnManager}>
-            <Button text={'Написать мне'} icon={<Mail />} isActive={true} />
+            <Button
+              text={'Написать мне'}
+              icon={<Mail />}
+              isActive={true}
+              onClick={() => (window.location.href = 'https://t.me/the_most_bee_bee')}
+            />
             <Button text={'Скачать резюме'} icon={<DownloadIcon />} isActive={false} />
           </div>
         </div>
