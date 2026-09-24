@@ -34,8 +34,8 @@ const Footer = () => {
         </div>
         <Button
           icon={<ArrowRightIcon />}
-          text={'Написать мне'}
-          onClick={() => (window.location.href = 'https://t.me/the_most_bee_bee')}
+          text={'Написать мне (ВК)'}
+          onClick={() => (window.location.href = 'https://vk.ru/un_connaisseur_du_beau')}
           isActive={true}
         />
       </div>

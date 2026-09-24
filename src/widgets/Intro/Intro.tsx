@@ -22,10 +22,10 @@ const Intro = () => {
           <Line />
           <div className={styles.btnManager}>
             <Button
-              text={'Написать мне'}
+              text={'Написать мне (ВК)'}
               icon={<Mail />}
               isActive={true}
-              onClick={() => (window.location.href = 'https://t.me/the_most_bee_bee')}
+              onClick={() => (window.location.href = 'https://vk.ru/un_connaisseur_du_beau')}
             />
             <Button text={'Скачать резюме'} icon={<DownloadIcon />} isActive={false} />
           </div>
