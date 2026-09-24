@@ -1,0 +1,75 @@
+.card {
+  background-color: var(--color-surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-color);
+  padding: var(--space-2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--space-2);
+  color: var(--color-text-secondary);
+  height: calc(var(--space-24)*5);
+  width: calc(var(--space-24)*3.5);
+  transition: var(--transition-normal);
+  overflow: hidden;
+
+  &:hover {
+    background-color: var(--color-surface-hover);
+  }
+
+  h4 {
+    color: var(--color-text);
+  }
+
+  img {
+    object-fit: cover;
+    height: 45%;
+    width: 100%;
+    border-radius: var(--radius-lg);
+  }
+
+  a {
+    transition: var(--transition-normal);
+  }
+
+  a:hover, a:active {
+    color: var(--color-primary-hover);
+  }
+}
+
+.current {
+  h4, span {
+    color: var(--color-primary);
+  }
+
+}
+
+.stackLine {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--space-1);
+  flex-wrap: wrap;
+}
+
+.stackItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-surface-hover);
+  border-radius: var(--radius-lg);
+  padding: var(--space-2);
+}
+
+.repoLink {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--space-4);
+
+  img {
+    width: var(--space-6);
+    height: var(--space-6);
+  }
+}
